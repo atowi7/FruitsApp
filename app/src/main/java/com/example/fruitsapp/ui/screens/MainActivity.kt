@@ -13,7 +13,7 @@ import com.example.fruitsapp.di.databaseModule
 import com.example.fruitsapp.di.networkModule
 import com.example.fruitsapp.di.productModule
 import com.example.fruitsapp.routes.Screen
-import com.example.fruitsapp.ui.theme.EcommerceAppTheme
+import com.example.fruitsapp.ui.theme.FruitAppTheme
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
             modules(listOf(databaseModule, networkModule, productModule))
         }
         setContent {
-            EcommerceAppTheme {
+            FruitAppTheme {
                 Surface(color = MaterialTheme.colorScheme.background) {
                     App()
                 }
